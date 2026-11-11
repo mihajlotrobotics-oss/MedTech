@@ -18,6 +18,3 @@ const originalRoleBindLiveEvents=bindLiveEvents;
 bindLiveEvents=function(){originalRoleBindLiveEvents();$('#phone-form').onsubmit=submitPhoneBooking;$('#phone-dialog').addEventListener('cancel',e=>{if(portalBusy)e.preventDefault()});$('#phone-dialog .close').onclick=()=>{if(!portalBusy)$('#phone-dialog').close()};$('#phone-dialog').addEventListener('close',()=>{$('#phone-name').value='';$('#phone-number').value='';phoneTarget=null;phoneCancelTarget=null})};
 const originalRoleInvalidation=invalidatePrivateUI;
 invalidatePrivateUI=function(){originalRoleInvalidation();if($('#phone-dialog').open)$('#phone-dialog').close();$('#phone-name').value='';$('#phone-number').value='';phoneTarget=null;phoneCancelTarget=null;roleHomeRequest++};
-setupAuthSync();
-init();
-setInterval(refreshLiveState,15000);

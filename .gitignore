@@ -5,6 +5,7 @@ backup-pre-profila/
 backup-pre-kalendara/
 node_modules/
 runtime/
+artifacts/
 backup*/
 *.sqlite
 *.sqlite-*

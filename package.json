@@ -6,6 +6,6 @@
   "engines": { "node": ">=24" },
   "scripts": {
     "start": "node server.cjs",
-    "test": "node --test backend.test.cjs calendar.test.cjs frontend.test.cjs phone.test.cjs"
+    "test": "node --test backend.test.cjs calendar.test.cjs frontend.test.cjs phone.test.cjs b2b.test.cjs urgent.test.cjs"
   }
 }

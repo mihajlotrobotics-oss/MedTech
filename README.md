@@ -36,7 +36,7 @@ Detaljnija uputstva: `KALENDAR.txt`, `BRZI-DEMO.txt`, `PROCITAJ.txt` i `INTEGRAC
 ## Testovi
 
 ```powershell
-node --test backend.test.cjs calendar.test.cjs frontend.test.cjs phone.test.cjs
+node --test backend.test.cjs calendar.test.cjs frontend.test.cjs phone.test.cjs b2b.test.cjs urgent.test.cjs
 ```
 
 Backend testovi koriste privremene baze. Frontend test proverava inicijalizaciju i glavne prikaze kroz simulirani DOM; nije zamena za vizuelnu proveru u stvarnom pregledaču.
@@ -45,8 +45,10 @@ Backend testovi koriste privremene baze. Frontend test proverava inicijalizaciju
 
 SQLite baza, ključevi, lozinke i sesije nastaju lokalno u `data/` i **ne šalju se na GitHub**. Bazu i njen `contacts.key` treba zajedno čuvati u privatnoj rezervnoj kopiji. Repo sadrži kod i uputstva, ne postojeće rezervacije ili naloge sa određenog računara.
 
-Klinike, lekari i termini su demonstracioni. Nema stvarnog slanja SMS/Viber poruka, spoljne kliničke sinhronizacije, naplate, medicinskih uploadova ili video poziva. Ovo nije produkcijski zdravstveni sistem niti potvrda pravne usklađenosti.
+Klinike, lekari i termini su demonstracioni. Nema stvarnog slanja SMS/Viber poruka, spoljne kliničke sinhronizacije, naplate ili video poziva. Ovo nije produkcijski zdravstveni sistem niti potvrda pravne usklađenosti.
 
 ## Razvoj i sinhronizacija
 
 Pre svake izmene proveriti `origin/main`, a završene promene poslati na GitHub. Pravila su sačuvana u `AGENTS.md`. Lokalna aplikacija i dalje radi bez GitHuba ili interneta.
+
+Aktuelne funkcije, uloge i ograničenja opisani su u [FEATURES.md](FEATURES.md).
