@@ -1,0 +1,51 @@
+Balkan MedTech - lokalna demonstraciona aplikacija
+
+POKRETANJE
+Dvoklik na Desktop precicu Balkan MedTech - Chrome ili na POKRENI-CHROME.cmd.
+POKRENI.cmd otvara podrazumevani browser; POKRENI-EDGE.cmd i POKRENI-FIREFOX.cmd otvaraju izabrani browser.
+U bilo kom modernom browseru na ovom racunaru mozete otvoriti http://localhost:4175/ dok server radi.
+ZAUSTAVI.cmd zaustavlja server. Node runtime je ukljucen u folder runtime; posebna instalacija nije potrebna.
+Ne otvarajte index.html direktno: aplikacija koristi lokalni API i SQLite bazu.
+
+FUNKCIJE
+32 medicinske grupe; pretraga termina i lekara; filteri grada/opstine, cene, vremena i ocena.
+Popusti su vezani za konkretan termin. Klinike i lekari imaju demonstracione profile.
+Gost moze sacuvati lokalnu rezervaciju i otkazati je. Recenzija je moguca tek nakon obavljenog pregleda oznacenog u portalu klinike.
+Portal ordinacije zahteva prijavu osoblja; nalog ima pristup samo dodeljenoj ordinaciji.
+Podsetnici SMS/Viber su samo lokalni nacrti; poruke se ne salju.
+
+PODACI I OGRANICENJA
+Sve klinike, lekari, adrese, cene i termini su izmisljeni. Ne unosite stvarne licne ili zdravstvene podatke.
+Lokalni kontakt se sifruje u bazi; kljuc je u data folderu. Pristup i bazi i kljucu omogucava desifrovanje.
+Prijava i registracija klijenata rade lokalno. Provera vlasnistva emaila/telefona i reset lozinke putem emaila nisu implementirani. Uputstvo: NALOZI.txt.
+Baza i kljuc moraju se zajedno cuvati pri backup-u. Gubitak kljuca onemogucava citanje sifrovanih kontakata.
+Nema stvarne veze sa klinikama, Heliantom/Medisom, SMS/Viber servisima ili placanjem.
+Upload nalaza, video konsultacije i porodicni nalozi su oznaceni kao naredna faza.
+Ova aplikacija nije sertifikovana niti je potvrdena uskladjenost sa GDPR/ZZPL.
+Vise o potrebnim integracijama i produkcijskom radu: INTEGRACIJE.md.
+Prethodna verzija i baza sacuvane su u backup-pre-prosirenja.
+
+TEHNICKA PROVERA
+U ovom folderu: node --test backend.test.cjs
+Testovi koriste privremenu bazu, ne menjaju podatke korisnika.
+API i staticki fajlovi dostupni su samo kroz loopback 127.0.0.1.
+
+SVE JE LOKALNO: server, baza, kontakti, rezervacije i Node runtime nalaze se na ovom racunaru. Internet i hosting nisu potrebni. Localhost oznacava ovaj racunar.
+
+PROFILI I BRZI ULAZ
+Na vrhu sajta su Demo klijent i Demo ordinacija za ulazak u dva spremna probna naloga.
+Moj nalog otvara uredjivanje profila, emaila, lozinke, aktivnih sesija i izvoz podataka.
+Detaljno uputstvo je u BRZI-DEMO.txt.
+DEMO-ISKLJUCI.cmd iskljucuje brzu prijavu na frontend/backend strani posle osvezavanja stranice.
+DEMO-UKLJUCI.cmd je ponovo ukljucuje. Normalni nalozi i prijava ostaju dostupni.
+RESET-LOZINKE.cmd sluzi lokalnom administratoru za oporavak naloga bez slanja emaila.
+Sve promene cuvaju se u lokalnoj SQLite bazi. Podsetnici su i dalje demo i ne salju se.
+
+KALENDAR, ODLUKE I OBAVESTENJA
+Portal ordinacije sadrzi radno vreme po danima, pauzu, trajanje pregleda i dnevni/nedeljni pregled kapaciteta.
+Novi zahtev ceka potvrdu ordinacije; prihvatanje zadrzava termin, odbijanje ga oslobadja.
+Klijent u Moj nalog vidi predstojece rezervacije i istoriju odbijanja/otkazivanja/obavljenih pregleda.
+Obavestenja u aplikaciji dostupna su klijentu i ordinaciji, uz broj neprocitanih poruka.
+Detaljno: KALENDAR.txt.
+Provera: node --test backend.test.cjs calendar.test.cjs frontend.test.cjs
+Vizuelna automatizacija pregledaca nije dostupna u ovom okruzenju; frontend je proveren simuliranim DOM-om, a API kroz integracione testove i lokalni HTTP.

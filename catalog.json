@@ -1,0 +1,304 @@
+[
+  [
+    "radiologija",
+    "Radiologija",
+    "◉",
+    [
+      "Ultrazvuk stomaka",
+      "Magnetna rezonanca",
+      "CT pregled",
+      "Mamografija"
+    ]
+  ],
+  [
+    "stomatologija",
+    "Stomatologija",
+    "♧",
+    [
+      "Stomatološki pregled",
+      "Uklanjanje kamenca",
+      "Popravka zuba",
+      "Ortopan snimanje"
+    ]
+  ],
+  [
+    "ginekologija",
+    "Ginekologija",
+    "♀",
+    [
+      "Ginekološki pregled",
+      "Ginekološki ultrazvuk",
+      "Papa test",
+      "Kolposkopija"
+    ]
+  ],
+  [
+    "kardiologija",
+    "Kardiologija",
+    "♡",
+    [
+      "Kardiološki pregled",
+      "Ultrazvuk srca",
+      "EKG",
+      "Holter EKG"
+    ]
+  ],
+  [
+    "dermatologija",
+    "Dermatologija",
+    "✧",
+    [
+      "Dermatološki pregled",
+      "Dermatoskopija",
+      "Pregled mladeža"
+    ]
+  ],
+  [
+    "oftalmologija",
+    "Oftalmologija",
+    "◎",
+    [
+      "Oftalmološki pregled",
+      "Kontrola dioptrije",
+      "Merenje očnog pritiska"
+    ]
+  ],
+  [
+    "orl",
+    "ORL",
+    "♩",
+    [
+      "ORL pregled",
+      "Audiometrija",
+      "Timpanometrija"
+    ]
+  ],
+  [
+    "pedijatrija",
+    "Pedijatrija",
+    "☀",
+    [
+      "Pedijatrijski pregled",
+      "Sistematski pregled deteta"
+    ]
+  ],
+  [
+    "neurologija",
+    "Neurologija",
+    "⌘",
+    [
+      "Neurološki pregled",
+      "EEG",
+      "EMNG"
+    ]
+  ],
+  [
+    "ortopedija",
+    "Ortopedija",
+    "⌁",
+    [
+      "Ortopedski pregled",
+      "Ultrazvuk zglobova"
+    ]
+  ],
+  [
+    "endokrinologija",
+    "Endokrinologija",
+    "✺",
+    [
+      "Endokrinološki pregled",
+      "Ultrazvuk štitaste žlezde"
+    ]
+  ],
+  [
+    "gastroenterologija",
+    "Gastroenterologija",
+    "◌",
+    [
+      "Gastroenterološki pregled",
+      "Gastroskopija",
+      "Kolonoskopija"
+    ]
+  ],
+  [
+    "urologija",
+    "Urologija",
+    "♙",
+    [
+      "Urološki pregled",
+      "Ultrazvuk urotrakta"
+    ]
+  ],
+  [
+    "pulmologija",
+    "Pulmologija",
+    "❋",
+    [
+      "Pulmološki pregled",
+      "Spirometrija"
+    ]
+  ],
+  [
+    "interna",
+    "Interna medicina",
+    "✚",
+    [
+      "Internistički pregled",
+      "Sistematski pregled"
+    ]
+  ],
+  [
+    "laboratorija",
+    "Laboratorija",
+    "⚗",
+    [
+      "Kompletna krvna slika",
+      "Biohemijske analize",
+      "Analiza urina"
+    ]
+  ],
+  [
+    "fizikalna",
+    "Fizikalna medicina",
+    "↗",
+    [
+      "Fizijatrijski pregled",
+      "Fizikalna terapija"
+    ]
+  ],
+  [
+    "psihijatrija",
+    "Psihijatrija",
+    "☯",
+    [
+      "Psihijatrijski pregled",
+      "Kontrolni pregled psihijatra"
+    ]
+  ],
+  [
+    "psihologija",
+    "Psihologija",
+    "✿",
+    [
+      "Razgovor sa psihologom",
+      "Psihološko testiranje"
+    ]
+  ],
+  [
+    "hirurgija",
+    "Opšta hirurgija",
+    "✂",
+    [
+      "Hirurški pregled",
+      "Kontrola nakon intervencije"
+    ]
+  ],
+  [
+    "reumatologija",
+    "Reumatologija",
+    "◇",
+    [
+      "Reumatološki pregled",
+      "Kontrolni pregled reumatologa"
+    ]
+  ],
+  [
+    "nefrologija",
+    "Nefrologija",
+    "◈",
+    [
+      "Nefrološki pregled",
+      "Kontrolni pregled nefrologa"
+    ]
+  ],
+  [
+    "hematologija",
+    "Hematologija",
+    "◍",
+    [
+      "Hematološki pregled",
+      "Kontrolni pregled hematologa"
+    ]
+  ],
+  [
+    "onkologija",
+    "Onkologija",
+    "⌑",
+    [
+      "Onkološka konsultacija",
+      "Kontrolni onkološki pregled"
+    ]
+  ],
+  [
+    "alergologija",
+    "Alergologija",
+    "❀",
+    [
+      "Alergološki pregled",
+      "Kožni alergološki test"
+    ]
+  ],
+  [
+    "vaskularna",
+    "Vaskularna hirurgija",
+    "⋈",
+    [
+      "Vaskularni pregled",
+      "Dopler krvnih sudova"
+    ]
+  ],
+  [
+    "infektologija",
+    "Infektologija",
+    "✳",
+    [
+      "Infektološki pregled",
+      "Kontrolni infektološki pregled"
+    ]
+  ],
+  [
+    "ishrana",
+    "Ishrana i dijetetika",
+    "❦",
+    [
+      "Konsultacija sa nutricionistom",
+      "Kontrola plana ishrane"
+    ]
+  ],
+  [
+    "logopedija",
+    "Logopedija",
+    "☏",
+    [
+      "Logopedska procena",
+      "Logopedski tretman"
+    ]
+  ],
+  [
+    "medicina-rada",
+    "Medicina rada",
+    "▣",
+    [
+      "Pregled medicine rada",
+      "Sistematski pregled zaposlenih"
+    ]
+  ],
+  [
+    "reprodukcija",
+    "Reproduktivna medicina",
+    "❃",
+    [
+      "Konsultacija za fertilitet",
+      "Kontrolni pregled fertiliteta"
+    ]
+  ],
+  [
+    "plasticna",
+    "Plastična hirurgija",
+    "✦",
+    [
+      "Konsultacija plastičnog hirurga",
+      "Kontrolni pregled"
+    ]
+  ]
+]

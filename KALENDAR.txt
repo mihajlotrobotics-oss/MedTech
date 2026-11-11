@@ -1,0 +1,38 @@
+KALENDAR ORDINACIJE I ZAHTEVI ZA REZERVACIJU
+
+ULAZ
+Otvorite http://localhost:4175/ i izaberite Demo ordinacija, zatim dashboard ordinacije.
+Obicni nalozi osoblja vide samo kalendar svoje ordinacije.
+
+RADNO VREME
+Za svaki dan nedelje podesite radi/ne radi, pocetak i kraj smene.
+Izaberite trajanje pregleda; pauza je opciona i mora biti unutar smene.
+Sistem generise samo cele termine koji staju u radno vreme i ne presecaju pauzu.
+Broj termina ne mnozi se brojem razlicitih usluga koje deli isti lekar.
+Promena rasporeda koja bi uklonila postojeci aktivan zahtev ili rezervaciju bice odbijena.
+Vreme je prikazano za Srbiju (Europe/Belgrade).
+Radni sati su PLANIRANI raspored, ne evidencija dolazaka zaposlenih.
+
+UKLJUCIVANJE I ISKLJUCIVANJE
+Slobodan termin mozete iskljuciti i kasnije ukljuciti.
+Promena se odmah cuva u lokalnoj bazi i utice na pretragu i novo zakazivanje.
+Zauzet termin se ne gasi kao slobodan termin; koristi se odgovarajuca radnja rezervacije.
+Isti lekar ne moze imati preklopljene preglede ni u razlicitim ordinacijama.
+
+REZERVACIJE
+Novi zahtev ceka potvrdu ordinacije i drzi termin zauzetim.
+Ordinacija prihvata ili odbija zahtev; odbijanje oslobadja termin.
+Klijent vidi predstojece rezervacije i istoriju, ukljucujuci odbijanja i otkazivanja.
+Za zakazivanje i odluku postoje lokalna obavestenja za klijenta i ordinaciju.
+To nisu SMS/Viber poruke i ne salju se van racunara.
+
+PRETHODNI PACIJENTI
+Istorija se povezuje preko klijentskog naloga i iste ordinacije.
+Prethodno zakazivanje nije isto sto i obavljen pregled.
+Oznaka povratnog pacijenta zahteva raniji pregled oznacen kao obavljen.
+Ne povezujemo razlicite osobe samo na osnovu istog imena ili emaila gosta.
+
+SINHRONIZACIJA
+Kalendar, rezervacije, pretraga i obavestenja koriste istu lokalnu bazu.
+Otvoreni pregledi se periodicno osvezavaju; nova rezervacija uvek proverava trenutno stanje.
+Heliant/Medis nisu potrebni za ove lokalne funkcije. Stvarna integracija sa njima zahteva poseban pristup njihovim sistemima.

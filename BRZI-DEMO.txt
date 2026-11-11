@@ -1,0 +1,32 @@
+BRZI DEMO PRISTUP
+
+Otvorite http://localhost:4175/.
+Dugme Demo klijent otvara spreman probni klijentski nalog.
+Dugme Demo ordinacija otvara spreman probni nalog ordinacije i njen panel.
+Ova dugmad namerno preskacu unos lozinke samo za ta dva probna naloga.
+Normalna prijava i registracija nastavljaju da rade za ostale naloge.
+
+KAKO UKLONITI BRZI PRISTUP
+Pokrenite DEMO-ISKLJUCI.cmd u folderu aplikacije, pa osvezite stranicu.
+Backend tada odbija brzi pristup cak i iz ranije otvorenog taba.
+DEMO-UKLJUCI.cmd ponovo ukljucuje ovu probnu opciju.
+Nalozi, lozinke i rezervacije se time ne brisu.
+
+MOJ NALOG
+Na profilu mozete urediti podatke, kontakt, izbor demo podsetnika,
+promeniti email i lozinku, pregledati aktivne sesije i preuzeti svoje podatke.
+Ordinacija moze urediti svoj javni demo profil i upravljati svojim terminima.
+Promene javnog profila ordinacije vide se i u pretrazi i u profilu klinike.
+Podsetnici su samo lokalni demo nacrti; poruke se ne salju.
+
+LOZINKE
+Inicijalni podaci naloga su u privatnim fajlovima data\PRIJAVA-KLIJENTA.txt
+ili data\PRIJAVA-ORDINACIJE.txt. Ako kasnije promenite email/lozinku,
+inicijalni podaci iz tih fajlova vise ne moraju biti vazeci.
+Oporavak lozinke obavlja lokalni administrator preko RESET-LOZINKE.cmd.
+Nema slanja emailova niti spoljasnjih servisa. Sve ostaje na ovom racunaru.
+
+POVEZANI PRIMER
+Pripremljena je jedna buduca demo rezervacija klijenta u njegovoj demo ordinaciji.
+Klijent je vidi u Moj nalog / rezervacije, a ordinacija u svom dashboardu.
+Mozete je otkazati i isprobavati dalje; nece se automatski ponovo praviti.

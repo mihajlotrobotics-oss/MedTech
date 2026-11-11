@@ -1,0 +1,3 @@
+'use strict';
+const path=require('node:path');const {createModel}=require('./model.cjs');
+const [clinicId,email,...name]=process.argv.slice(2);if(!clinicId||!email||!name.length){console.error('Upotreba: KREIRAJ-ORDINACIJU.cmd "radiologija:0:1" "osoblje@example.test" "Naziv naloga"');process.exitCode=1}else{let model;try{model=createModel({dbPath:path.join(__dirname,'data','medtech.sqlite')});const result=model.auth.createClinic({clinicId,email,name:name.join(' ')});console.log('Nalog ordinacije je kreiran. Privatni podaci za prijavu su u fajlu: '+result.file)}catch(e){console.error(e.status?e.message:'Nalog nije kreiran. Proverite argumente i pristup lokalnim podacima.');process.exitCode=1}finally{model?.close()}}

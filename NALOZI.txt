@@ -1,0 +1,41 @@
+PRIJAVA U LOKALNI BALKAN MEDTECH
+
+Otvorite http://localhost:4175/ ili Desktop precicu Balkan MedTech - Chrome.
+
+KLIJENT
+U gornjem delu aplikacije izaberite Prijava, zatim Klijent.
+Za nov nalog izaberite registraciju, unesite demo ime, email i lozinku.
+Koristite izmisljen email i posebnu lozinku za lokalno testiranje.
+Registracija ne salje email i ne proverava vlasnistvo email adrese.
+Rezervacije naloga dostupne su nakon ponovne prijave, nezavisno od pregledaca.
+Gostujuce rezervacije iz trenutne sesije mogu se povezati pri prijavi; samo isti email nije dokaz vlasnistva drugih rezervacija.
+
+ORDINACIJA
+Izaberite Prijava / Ordinacija ili Za ordinacije.
+Prvi lokalni demo nalog vezan je za jednu radiolosku ordinaciju.
+Podaci za prijavu nalaze se u data\PRIJAVA-ORDINACIJE.txt nakon prvog pokretanja nove verzije.
+Taj fajl nije dostupan putem sajta. Ne delite ga sa drugim osobama.
+Osoblje vidi samo rezervacije, kalendar i statistiku svoje ordinacije.
+Nalog ordinacije se ne kreira javnom registracijom klijenta.
+
+ODJAVA
+Dugme Odjava prekida prijavljenu sesiju. Sacuvani nalozi i rezervacije ostaju u lokalnoj bazi.
+Sve radi na ovom racunaru; nema udaljenog hosting servisa.
+
+DODATNI NALOG OSOBLJA (LOKALNI ADMINISTRATOR)
+U folderu aplikacije pokrenite komandni prozor i primer:
+KREIRAJ-ORDINACIJU.cmd "stomatologija:0:1" "osoblje@example.test" "Osoblje ordinacije"
+Program generise lozinku i sacuva podatke za prijavu u novom privatnom fajlu u data folderu.
+Clinic ID format: medicinska-grupa:grad:ordinacija.
+Grad 0=Beograd, 1=Novi Sad, 2=Nis. Ordinacija 0=Lipa, 1=Nova, 2=Vita.
+Primeri grupa: radiologija, stomatologija, ginekologija, kardiologija.
+Kreiranje naloga osoblja dozvoljeno je samo direktno sa ovog racunara; nije javna registracija na sajtu.
+
+MOJ NALOG I BRZO TESTIRANJE
+Demo klijent i Demo ordinacija omogucavaju direktan ulazak u probne naloge.
+Ta opcija je namerno ogranicena samo na dva demo profila.
+Za njeno kasnije uklanjanje koristite DEMO-ISKLJUCI.cmd, pa osvezite stranicu.
+Profil korisnika je dostupan preko Moj nalog. Ordinacija tu uredjuje i svoj javni profil.
+Lozinka se menja uz unos trenutne lozinke; ostale sesije se opozivaju.
+Sesije se mogu pregledati i pojedinacno odjaviti, a sopstveni podaci izvesti lokalno u JSON.
+Kontakt i podesavanja profila cuvaju se sifrovano; demo poslovni podaci klinike su vidljivi na javnom lokalnom profilu.
