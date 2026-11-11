@@ -11,8 +11,7 @@ The canonical source repository is https://github.com/mihajlotrobotics-oss/MedTe
 
 ## At completion
 
-1. Run checks appropriate to the change. Main suite:
-ode --test backend.test.cjs calendar.test.cjs frontend.test.cjs`. Node.js 24+ is required; there are no third-party runtime dependencies.
+1. Run checks appropriate to the change. Main suite: `node --test backend.test.cjs calendar.test.cjs frontend.test.cjs`. Node.js 24+ is required; there are no third-party runtime dependencies.
 2. Inspect the exact staged files for private/generated content, commit the completed source changes, and push to `origin/main`. This is a standing user authorization; no new conversational approval is needed for ordinary project updates.
 3. Recheck the remote branch head and report the resulting commit. If native Git authentication is unavailable, the connected GitHub API may be used to publish the same source safely, then align the local checkout with that remote history without losing work.
 4. Do not claim that a GitHub upload succeeded unless verified. Never overwrite a newer remote version without integrating it first.
