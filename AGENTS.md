@@ -11,7 +11,7 @@ The canonical source repository is https://github.com/mihajlotrobotics-oss/MedTe
 
 ## At completion
 
-1. Run checks appropriate to the change. Main suite: `node --test backend.test.cjs calendar.test.cjs frontend.test.cjs`. Node.js 24+ is required; there are no third-party runtime dependencies.
+1. Run checks appropriate to the change. Main suite: `node --test backend.test.cjs calendar.test.cjs frontend.test.cjs phone.test.cjs`. Node.js 24+ is required; there are no third-party runtime dependencies.
 2. Inspect the exact staged files for private/generated content, commit the completed source changes, and push to `origin/main`. This is a standing user authorization; no new conversational approval is needed for ordinary project updates.
 3. Recheck the remote branch head and report the resulting commit. If native Git authentication is unavailable, the connected GitHub API may be used to publish the same source safely, then align the local checkout with that remote history without losing work.
 4. Do not claim that a GitHub upload succeeded unless verified. Never overwrite a newer remote version without integrating it first.
@@ -24,3 +24,5 @@ The canonical source repository is https://github.com/mihajlotrobotics-oss/MedTe
 - Preserve role isolation: clients access their own bookings and clinic users only their assigned clinic. Pending requests hold capacity; rejection/cancellation releases it. Do not present a previous booking as proof of an attended visit.
 - Heliant, Medis, SMS/Viber, payments and video providers are not connected. Do not imply a real external integration or message delivery.
 - Keep all application text in Serbian Latin and preserve existing local data during schema migrations.
+- Clinic users must not access public clinic search or other clinics' profiles/calendars; show only their assigned clinic workspace. Client and clinic notification inboxes must remain separate.
+- Phone reservations are clinic-entered, private to that clinic, and never commission-eligible. Clients must never see the phone source or patient contact; occupied phone slots are simply unavailable, like other occupied slots. Only completed platform-origin bookings enter the commission basis. Never accept a client-provided source override.

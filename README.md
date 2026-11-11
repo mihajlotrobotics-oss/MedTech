@@ -27,13 +27,16 @@ Na vrhu stranice su **Demo klijent** i **Demo ordinacija** za ulazak jednim klik
 - Novi zahtev zauzima termin dok ordinacija ne prihvati ili odbije zahtev.
 - Klijent vidi predstojeće rezervacije i istoriju; obe strane dobijaju lokalna obaveštenja.
 - Istorija ranijih zakazivanja i ranije obavljenih pregleda prikazuju se odvojeno.
+- Klijenti imaju pretragu i svoje rezervacije; ordinacija vidi isključivo svoj radni prostor i odvojena obaveštenja.
+- Ordinacija može uneti telefonsku rezervaciju. Izvor i kontakt su vidljivi samo ordinaciji; termin nestaje iz javne ponude slobodnih termina. Telefonski unosi ne ulaze u osnovicu provizije platforme.
+- Svaka medicinska grupa ima sopstvenu SVG ikonicu sa diskretnom animacijom i podrškom za smanjeno kretanje.
 
 Detaljnija uputstva: `KALENDAR.txt`, `BRZI-DEMO.txt`, `PROCITAJ.txt` i `INTEGRACIJE.md`.
 
 ## Testovi
 
 ```powershell
-node --test backend.test.cjs calendar.test.cjs frontend.test.cjs
+node --test backend.test.cjs calendar.test.cjs frontend.test.cjs phone.test.cjs
 ```
 
 Backend testovi koriste privremene baze. Frontend test proverava inicijalizaciju i glavne prikaze kroz simulirani DOM; nije zamena za vizuelnu proveru u stvarnom pregledaču.

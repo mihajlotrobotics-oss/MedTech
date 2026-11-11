@@ -36,3 +36,12 @@ SINHRONIZACIJA
 Kalendar, rezervacije, pretraga i obavestenja koriste istu lokalnu bazu.
 Otvoreni pregledi se periodicno osvezavaju; nova rezervacija uvek proverava trenutno stanje.
 Heliant/Medis nisu potrebni za ove lokalne funkcije. Stvarna integracija sa njima zahteva poseban pristup njihovim sistemima.
+
+ODVOJENI PRIKAZI I TELEFONSKE REZERVACIJE
+Ordinacija vidi samo svoj radni prostor, kalendar i ordinacijska obavestenja.
+Klijent vidi pretragu, svoje rezervacije i sopstvena obavestenja.
+Na slobodnom terminu ordinacija bira Rezervisano telefonom; ime i telefon su opcioni.
+Izvor i kontakt vide se samo u toj ordinaciji. Za klijente je termin samo zauzet i ne nudi se kao slobodan.
+Telefonske rezervacije mogu se otkazati iz ordinacijskog panela.
+Osnovica za proviziju ukljucuje samo obavljene preglede rezervisane preko platforme.
+Telefonske rezervacije imaju nultu proviziju i ne ulaze u tu osnovicu.
